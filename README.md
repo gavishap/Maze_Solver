@@ -1,5 +1,6 @@
 # Maze_Solver
 
+![image](https://github.com/gavishap/Maze_Solver/assets/71888304/c78e43a0-b105-4f6a-b5cc-1d2a37b7ca23)
 
 A modular and extensible maze application designed with a focus on user experience and optimized algorithm implementation.
 
