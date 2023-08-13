@@ -19,7 +19,36 @@ A modular and extensible maze application designed with a focus on user experien
 ## Usage
 
 ```bash
-// Instructions to run the application
+## Usage
+
+1. **Clone the Repository**
+    ```
+    git clone https://github.com/YOUR_USERNAME/Maze_Solver.git
+    cd Maze_Solver
+    ```
+
+2. **Build the Project**
+    - With Visual Studio:
+        - Open the solution/project file in Visual Studio.
+        - Build the solution.
+    - Command Line (assuming you have the necessary build tools installed):
+        ```
+        cl /EHsc Maze_Solver\Main.cpp /Fe:Maze_Solver\MyProgram.exe
+        ```
+
+3. **Run the Maze Solver CLI**
+    ```
+    .\Maze_Solver\MyProgram.exe
+    ```
+
+4. **Interact with the CLI**
+    - Once you run the program, you'll be presented with a CLI. Follow the on-screen instructions to generate mazes, solve them, and visualize solutions. Use the supported commands to navigate and operate the application.
+
+5. **Exiting the Application**
+    - Use the 'exit' or a similar command as per the CLI's instructions to safely terminate the program.
+
+Note: Ensure you have the necessary dependencies and tools installed before building and running the application.
+
 ```
 
 ## Contribution
