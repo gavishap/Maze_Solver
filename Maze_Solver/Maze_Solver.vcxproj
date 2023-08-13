@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{be9d6c69-ed3e-4226-9606-2e4951b726a3}</ProjectGuid>
+    <RootNamespace>MazeSolver</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Controller\Commands\Command.cpp" />
+    <ClCompile Include="Controller\Commands\DirCommand.cpp" />
+    <ClCompile Include="Controller\Commands\DisplayCommand.cpp" />
+    <ClCompile Include="Controller\Commands\DisplaySolutionCommand.cpp" />
+    <ClCompile Include="Controller\Commands\FileSizeCommand.cpp" />
+    <ClCompile Include="Controller\Commands\GenerateMazeCommand.cpp" />
+    <ClCompile Include="Controller\Commands\LoadMazeCommand.cpp" />
+    <ClCompile Include="Controller\Commands\MazeSizeCommand.cpp" />
+    <ClCompile Include="Controller\Commands\SaveMazeCommand.cpp" />
+    <ClCompile Include="Controller\Commands\SolveMazeCommand.cpp" />
+    <ClCompile Include="Controller\Controller.cpp" />
+    <ClCompile Include="Controller\MazeFileManager.cpp" />
+    <ClCompile Include="Controller\Solving Algorithms\AStar.cpp" />
+    <ClCompile Include="Controller\Solving Algorithms\BFS.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Model\AbstractMaze2dGenerator.cpp" />
+    <ClCompile Include="Model\AbstractSearchable.cpp" />
+    <ClCompile Include="Model\AbstractSearcher.cpp" />
+    <ClCompile Include="Model\Maze2d.cpp" />
+    <ClCompile Include="Model\Maze2dGenerator.cpp" />
+    <ClCompile Include="Model\MazeCompression.cpp" />
+    <ClCompile Include="Model\MazeStorage.cpp" />
+    <ClCompile Include="Model\MyMaze2dGenerator.cpp" />
+    <ClCompile Include="Model\SimpleMaze2dGenerator.cpp" />
+    <ClCompile Include="Model\SolutionStorage.cpp" />
+    <ClCompile Include="View\CLI.cpp" />
+    <ClCompile Include="View\CLIView.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Controller\Commands\Command.h" />
+    <ClInclude Include="Controller\Commands\DirCommand.h" />
+    <ClInclude Include="Controller\Commands\DisplayCommand.h" />
+    <ClInclude Include="Controller\Commands\DisplaySolutionCommand.h" />
+    <ClInclude Include="Controller\Commands\FileSizeCommand.h" />
+    <ClInclude Include="Controller\Commands\GenerateMazeCommand.h" />
+    <ClInclude Include="Controller\Commands\LoadMazeCommand.h" />
+    <ClInclude Include="Controller\Commands\MazeSizeCommand.h" />
+    <ClInclude Include="Controller\Commands\SaveMazeCommand.h" />
+    <ClInclude Include="Controller\Commands\SolveMazeCommand.h" />
+    <ClInclude Include="Controller\Controller.h" />
+    <ClInclude Include="Controller\MazeFileManager.h" />
+    <ClInclude Include="Controller\Solving Algorithms\AStar.h" />
+    <ClInclude Include="Controller\Solving Algorithms\BFS.h" />
+    <ClInclude Include="Model\AbstractMaze2dGenerator.h" />
+    <ClInclude Include="Model\AbstractSearchable.h" />
+    <ClInclude Include="Model\AbstractSearcher.h" />
+    <ClInclude Include="Model\Maze2d.h" />
+    <ClInclude Include="Model\Maze2dGenerator.h" />
+    <ClInclude Include="Model\MazeCompression.h" />
+    <ClInclude Include="Model\MazeStorage.h" />
+    <ClInclude Include="Model\MyMaze2dGenerator.h" />
+    <ClInclude Include="Model\SimpleMaze2dGenerator.h" />
+    <ClInclude Include="Model\SolutionStorage.h" />
+    <ClInclude Include="View\CLI.h" />
+    <ClInclude Include="View\CLIView.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
