@@ -1,1 +1,22 @@
+name: C++ CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Set up MSVC
+      uses: ilammy/msvc-dev-cmd@v1
+
+    - name: Build
+      run: |
+        cl /EHsc Main.cpp /Fe:MyProgram.exe
+
+    - name: Run
+      run: .\MyProgram.exe
 
