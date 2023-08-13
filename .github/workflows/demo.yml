@@ -15,8 +15,7 @@ jobs:
 
     - name: Build
       run: |
-        cl /EHsc Main.cpp /Fe:MyProgram.exe
+        cl /EHsc Maze_Solver\Main.cpp /Fe:Maze_Solver\MyProgram.exe
 
     - name: Run
-      run: .\MyProgram.exe
-
+      run: .\Maze_Solver\MyProgram.exe
